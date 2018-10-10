@@ -45,9 +45,10 @@ GEM
       execjs
     bcrypt (3.1.12-x86-mingw32)
     bindex (0.5.0)
-    bootstrap-sass (3.3.7)
-      autoprefixer-rails (>= 5.2.1)
-      sass (>= 3.3.4)
+    bootstrap (4.1.3)
+      autoprefixer-rails (>= 6.0.3)
+      popper_js (>= 1.12.9, < 2)
+      sass (>= 3.5.2)
     bootstrap-will_paginate (1.0.0)
       will_paginate
     builder (3.2.3)
@@ -230,6 +231,8 @@ GEM
     fog-xml (0.1.3)
       fog-core
       nokogiri (>= 1.5.11, < 2.0.0)
+    font-awesome-rails (4.7.0.4)
+      railties (>= 3.2, < 6.0)
     formatador (0.2.5)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -294,6 +297,7 @@ GEM
     ovirt-engine-sdk (4.2.5)
       json (>= 1, < 3)
     pg (0.20.0-x86-mingw32)
+    popper_js (1.14.3)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -405,13 +409,14 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (= 3.1.12)
-  bootstrap-sass (= 3.3.7)
+  bootstrap (= 4.1.3)
   bootstrap-will_paginate (= 1.0.0)
   byebug (= 9.0.6)
   carrierwave (= 1.2.2)
   coffee-rails (= 4.2.2)
   faker (= 1.7.3)
   fog (= 1.42)
+  font-awesome-rails
   guard (= 2.14.1)
   guard-minitest (= 2.4.6)
   jbuilder (= 2.7.0)
@@ -421,12 +426,14 @@ DEPENDENCIES
   minitest (= 5.10.3)
   minitest-reporters (= 1.1.14)
   pg (= 0.20.0)
+  popper_js
   puma (= 3.9.1)
   rails (= 5.1.6)
   rails-controller-testing (= 1.0.2)
   sass-rails (= 5.0.6)
   spring (= 2.0.2)
   spring-watcher-listen (= 2.0.1)
+  sprockets-rails (= 3.2.1)
   sqlite3 (= 1.3.13)
   turbolinks (= 5.0.1)
   tzinfo-data
