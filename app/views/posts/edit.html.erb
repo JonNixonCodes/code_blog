@@ -5,30 +5,31 @@
         <div class="control-group">
           <div class="form-group floating-label-form-group controls">
             <%= f.label :title %><br>
-            <%= f.text_field :title, class: "form-control", placeholder: "Title" %>
+            <%= f.text_field :title, class: "form-control", placeholder: "Title", value: @post.title %>
           </div>
         </div>
         <div class="control-group">
           <div class="form-group floating-label-form-group controls">
             <%= f.label :subtitle %><br>
-            <%= f.text_field :subtitle, class: "form-control", placeholder: "Subtitle" %>
+            <%= f.text_field :subtitle, class: "form-control", placeholder: "Subtitle", value: @post.subtitle %>
           </div>
         </div>
         <div class="control-group">
           <div class="form-group floating-label-form-group controls">
             <%= f.label :author %><br>
-            <%= f.text_field :author, class: "form-control", placeholder: "Author" %>
+            <%= f.text_field :author, class: "form-control", placeholder: "Author", value: @post.author %>
           </div>
         </div>
         <div class="control-group">
           <div class="form-group floating-label-form-group controls">
             <%= f.label :content %><br>
-            <%= f.text_area :content, class: "form-control", :rows => 10, placeholder: "Content" %>
+            <%= f.text_area :content, class: "form-control", :rows => 10, placeholder: "Content", value: @post.content %>
           </div>
         </div>
         <br>
         <div class="form-group">
-          <%= f.submit "Add Post", class: "btn btn-success" %>
+          <%= f.submit "Update Post", class: "btn btn-success" %>
+          <%= link_to "Cancel", post_path(@post), class: "btn btn-primary" %>
         </div>
       <% end %>
     </div>

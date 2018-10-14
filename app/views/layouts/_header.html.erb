@@ -4,10 +4,28 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="site-heading">
-          <h1>Hello, World!</h1>
-          <span class="subheading">A blog about my #100DaysofCode journey.</span>
-        </div>
+        <% if params[:controller] == 'posts' &&
+          params[:action] == 'show' %>
+          <div class="post-heading">
+            <h1><%= @post.title %></h1>
+            <h2 class="subheading"><%= @post.subtitle %></h2>
+            <span class="meta">Posted by
+              <a href="#"><%= @post.author %></a>
+              on <%= @post.created_at.strftime("%B %d, %Y") %>
+            </span>
+          </div>
+        <% elsif params[:controller] == 'posts' &&
+          params[:action] == 'new' %>
+          <div class="site-heading">
+            <h1>New Post</h1>
+          </div>
+        <% else %>
+          <div class="site-heading">
+            <h1>Hello, World!</h1>
+            <span class="subheading">A blog about my <%= link_to "#100DaysofCode", "https://twitter.com/search?q=%23100DaysofCode&src=tyah" %> journey.</span>
+          </div>
+        <% end %>
+
       </div>
     </div>
   </div>

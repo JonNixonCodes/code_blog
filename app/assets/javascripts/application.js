@@ -11,5 +11,6 @@
 // about supported directives.
 //
 //= require jquery3
+//= require jquery_ujs
 //= require bootstrap
 //= require clean-blog/clean-blog.min
