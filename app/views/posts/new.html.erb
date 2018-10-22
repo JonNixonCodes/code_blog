@@ -3,27 +3,27 @@
     <div class="col-lg-8 col-md-10 mx-auto">
       <%= form_for(@post) do |f| %>
         <div class="control-group">
-          <div class="form-group floating-label-form-group controls">
+          <div class="form-group controls">
             <%= f.label :title %><br>
-            <%= f.text_field :title, class: "form-control", placeholder: "Title" %>
+            <%= f.text_field :title, class: "form-control", autofocus: true %>
           </div>
         </div>
         <div class="control-group">
-          <div class="form-group floating-label-form-group controls">
+          <div class="form-group controls">
             <%= f.label :subtitle %><br>
-            <%= f.text_field :subtitle, class: "form-control", placeholder: "Subtitle" %>
+            <%= f.text_field :subtitle, class: "form-control" %>
           </div>
         </div>
         <div class="control-group">
-          <div class="form-group floating-label-form-group controls">
+          <div class="form-group controls">
             <%= f.label :author %><br>
-            <%= f.text_field :author, class: "form-control", placeholder: "Author" %>
+            <%= f.text_field :author, class: "form-control" %>
           </div>
         </div>
         <div class="control-group">
-          <div class="form-group floating-label-form-group controls">
+          <div class="form-group controls">
             <%= f.label :content %><br>
-            <%= f.text_area :content, class: "form-control", :rows => 10, placeholder: "Content" %>
+            <%= f.text_area :content, class: "form-control", :rows => 10 %>
           </div>
         </div>
         <br>
